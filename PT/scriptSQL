@@ -1,0 +1,78 @@
+CREATE DATABASE ttBD;
+
+CREATE TABLE administrador(
+	id INT NOT NULL AUTO_INCREMENT ,
+	correo VARCHAR( 100 ) NOT NULL ,
+	password VARCHAR( 30 ) NOT NULL ,
+	PRIMARY KEY ( id )
+);
+
+CREATE TABLE profesor(
+	id INT NOT NULL AUTO_INCREMENT ,
+	nombre VARCHAR( 100 ) ,
+	apellidopaterno VARCHAR( 50 ) ,
+	apellidomaterno varchar( 50 ) ,
+	correo VARCHAR( 100 ) NOT NULL ,
+	password VARCHAR( 30 ) NOT NULL ,
+	PRIMARY KEY ( id )
+);
+
+CREATE TABLE tt(
+	id INT NOT NULL AUTO_INCREMENT ,
+	titulo VARCHAR( 500 ) NOT NULL ,
+	resumen TEXT ,
+	fechainicial DATE ,
+	fechafinal DATE ,
+	tt_relacionado VARCHAR( 500 ) ,
+	totalreportes INT ,
+	id_profesor INT NOT NULL ,
+	bandera INT ,
+	PRIMARY KEY ( id ),
+	FOREIGN KEY (id_profesor) REFERENCES profesor( id )
+);
+
+CREATE TABLE tesis(
+	id INT NOT NULL AUTO_INCREMENT ,
+	titulo VARCHAR( 200 ) ,
+	nombre1 VARCHAR (200) ,
+	nombre2 VARCHAR (200) ,
+	asesor VARCHAR (200) ,
+	fecha DATE ,
+	url VARCHAR( 500 ) NOT NULL ,
+	bandera INT NOT NULL ,
+	id_tt INT ,
+	PRIMARY KEY ( id ) ,
+	FOREIGN KEY (id_tt) REFERENCES tt( id )
+);
+
+CREATE TABLE alumno(
+	id INT NOT NULL AUTO_INCREMENT ,
+	nombre VARCHAR( 100 ) ,
+	apellidopaterno VARCHAR( 50 ) ,
+	apellidomaterno varchar( 50 ) ,
+	correo VARCHAR( 100 ) NOT NULL,
+	password VARCHAR( 30 ) NOT NULL ,
+	telefono VARCHAR( 20 ) ,
+	celular VARCHAR( 20 ) ,
+	id_tt INT,
+	id_profesor INT NOT NULL ,
+	PRIMARY KEY ( id ) ,
+	FOREIGN KEY ( id_tt ) REFERENCES tt( id ),
+	FOREIGN KEY (id_profesor) REFERENCES profesor( id )
+);
+
+CREATE TABLE actividad(
+	id INT NOT NULL AUTO_INCREMENT ,
+	titulo VARCHAR( 200 ) ,
+	fechaentrega DATE ,
+	descripcion TEXT ,
+	numero INT ,
+	resultado TEXT ,
+	id_tt INT NOT NULL ,
+	PRIMARY KEY ( id ) ,
+	FOREIGN KEY ( id_tt ) REFERENCES tt( id )
+);
+
+INSERT INTO administrador (correo, password) VALUES ('admin@admin.com','321321');
+
+INSERT INTO profesor (nombre, apellidopaterno, apellidomaterno, correo, password) VALUES ('Miguel','Felix', 'Feliciano', 'migue@gmail.com','123123');

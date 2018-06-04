@@ -1,0 +1,91 @@
+body{
+    font-family: Helvetica;
+    font-size: 2em;
+
+    background: white; /* Old browsers */
+}
+
+header, nav{
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    border: 1px solid #eebb55;
+    border-radius: 5px;
+    background: #5ab7e6;
+}
+
+footer{
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 50px;
+    border: 1px solid #eebb55;
+    border-radius: 7pt;
+    background: #5ab7e6;
+}
+
+#wrapinterno{
+    min-height: 400px;
+    margin: 0px;
+    padding: 0px;
+    /*Para que despliegue el flex*/
+    display: -webkit-flex;
+    display: flex;
+    -wenkit-flex-flow: row;
+    flex-flow: row;
+}
+    
+#wrapinterno > aside{    
+    margin: 4px;
+    padding: 5px;
+    height: 400px;
+    background: #dddd88;
+    border: 1px solid #feabcd;
+    border-radius: 7pt;
+    /*que tan responsivo quiero que sea*/
+    -webkit-flex: 1 1 40%; /*chrome, safair*/
+    flex: 1 1 40%; /*ie11+*/
+    -ms-flex: 1 1 40%; /*ie10*/
+    
+    -webkit-order: 2;
+    order: 2;
+    -ms-order: 2; /*ie10*/
+}
+
+#wrapinterno > article{
+    margin: 4px;
+    padding: 5px;
+    height: 400px;
+    background: #dddd88;
+    border: 1px solid #feabcd;
+    border-radius: 7pt;
+    -webkit-flex: 1 1 60%; /*chrome, safair*/
+    flex: 1 1 60%; /*ie11+*/
+    -ms-flex: 1 1 60%; /*ie10*/
+    
+    -webkit-order: 1;
+    order: 1;
+    -ms-order: 1; /*ie10*/
+}
+
+/*Cuando cambia la resolución*/
+@media all and (max-width: 800px){
+    #wrapinterno > article{
+        font-size: 0.2em;
+    }
+    #wrapinterno {
+        -webkit-flex-flow: column;
+        flex-flow: column;
+    }
+}
+
+@media all and (min-width: 1800px){
+    #wrapinterno > article{
+        font-size: 5em;
+    }
+    #wrapinterno {
+        -webkit-flex-flow: column;
+        flex-flow: column;
+    }
+}

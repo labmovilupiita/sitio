@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Detección de Patrones Delictivos</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <style type="text/css">
+.link, .link a:link, .link a:active, .link a:visited {
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+display:block
+}
+.link a:hover{
+text-decoration:underline;
+display:block;
+}
+</style>
+
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Patrones Delictivos</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index_post_extraidos.html">Post Extraidos</a></li>
+                      <li><a href="index_definiciones.html">Definiciones</a></li>
+                      <li><a href="index_clasificacion.html">Clasificacion</a></li>
+                      <li><a href="index_agrupaciones.html">Agrupaciones</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">General Form</a></li>
+                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="form_validation.html">Form Validation</a></li>
+                      <li><a href="form_wizards.html">Form Wizard</a></li>
+                      <li><a href="form_upload.html">Form Upload</a></li>
+                      <li><a href="form_buttons.html">Form Buttons</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="general_elements.html">General Elements</a></li>
+                      <li><a href="media_gallery.html">Media Gallery</a></li>
+                      <li><a href="typography.html">Typography</a></li>
+                      <li><a href="icons.html">Icons</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="widgets.html">Widgets</a></li>
+                      <li><a href="invoice.html">Invoice</a></li>
+                      <li><a href="inbox.html">Inbox</a></li>
+                      <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chartjs.html">Chart JS</a></li>
+                      <li><a href="chartjs2.html">Chart JS2</a></li>
+                      <li><a href="morisjs.html">Moris JS</a></li>
+                      <li><a href="echarts.html">ECharts</a></li>
+                      <li><a href="other_charts.html">Other Charts</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                 <h1>Clasificación</h1>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Cantidad de post por delito </h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <!-- Inicia Grafico -->
+                  <div class="x_content" style="height: 50%;">
+                    <canvas id="grafica" width="920px" height="200"></canvas>
+                  </div>
+                  <!-- Termina Grafico -->
+                </div>
+              </div>              
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Mapa de delitos </h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    
+                    <!-- inicia la tabla -->
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <table  class="table table-hover">
+                        <tbody style="">
+                          <tr>
+                            <td class="link"><a href="#" onclick="extorcion()">Extorción</a></td>
+                          </tr>
+                          <tr>
+                            <td class="link"><a href="#" onclick="homicido()">Homicidio</a></td>
+                          </tr>
+                          <tr>
+                            <td class="link"><a href="">Robo a Casa habitación</a></td>
+                          </tr>
+                          <tr>
+                            <td class="link"><a href="">Robo a Transeúnte</a></td>
+                          </tr>
+                          <tr>
+                            <td class="link"><a href="">Robo de Vehículos</a></td>
+                          </tr>
+                          <tr>
+                            <td class="link"><a href="">Robo en Trasporte público</a></td>
+                          </tr>
+                          <tr>
+                            <td class="link"><a href="">Secuestro</a></td>
+                          </tr>
+                          <tr>
+                            <td class="link"><a href="">Violación</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- termina la tabla -->
+                    
+                    <!-- inicia la mapa -->
+                    <div class="col-md-10 col-sm-10 col-xs-10">
+                      <div id="googleMap" style="width:100%;height:700px;"></div>
+                        
+                        <!-- Inicia modal -->
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="myModal">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Informacion del delito</h4>
+                              </div>
+                              <div class="modal-body">
+                                <h4>Delito </h4>
+                                <p>Descripcion de delito
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Termina modal -->
+                       <script>
+                        function myMap() {
+                          var mapProp= {
+                            center:new google.maps.LatLng(19.4284700, -99.1276600),
+                            zoom:13,
+                          };
+                          map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                        }
+                        
+                        function extorcion(){
+                          var marker = new google.maps.Marker({position:new google.maps.LatLng(19.4284700, -99.1276600)});
+                          var marker2 = new google.maps.Marker({position:new google.maps.LatLng(19.423619400, -99.163293100)});
+                          marker.setMap(map);
+                          marker2.setMap(map);
+                          var infowindow = new google.maps.InfoWindow({
+                            content: "Delito de Extorcion"
+                          });
+                          infowindow.open(map,marker);
+                          var infowindow2 = new google.maps.InfoWindow({
+                            content: "Delito de extorcion"
+                          });
+                          infowindow2.open(map,marker2);
+
+                          google.maps.event.addListener(marker,'click',function() {
+                              $("#myModal").modal();
+                          });
+                          google.maps.event.addListener(marker2,'click',function() {
+                              $("#myModal").modal();
+                          });
+                        }
+
+                        function homicido(){
+                          var marker = new google.maps.Marker({position:new google.maps.LatLng(19.367834611, -99.144641878)});
+                          var marker2 = new google.maps.Marker({position:new google.maps.LatLng(19.419649370, -99.213306429)});
+                          marker.setMap(map);
+                          marker2.setMap(map);
+                          var infowindow = new google.maps.InfoWindow({
+                            content: "Delito de Homicidio"
+                          });
+                          infowindow.open(map,marker);
+                          var infowindow2 = new google.maps.InfoWindow({
+                            content: "Delito de Homicidio"
+                          });
+                          infowindow2.open(map,marker2);
+
+                          google.maps.event.addListener(marker,'click',function() {
+                              $("#myModal").modal();
+                          });
+                          google.maps.event.addListener(marker2,'click',function() {
+                              $("#myModal").modal();
+                          });
+                        }
+                      </script>
+                    </div>
+                    <!-- termina la mapa -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /page content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARNFoIyPlf5T1BAtJYDt6R8uFTs0j_YVs&callback=myMap"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+  </body>
+</html>
+
+<script type="text/javascript">
+  
+  /*   
+     Configuracion de la grafica de barras
+  */
+  var ctx = document.getElementById("grafica").getContext('2d');
+  var original = Chart.defaults.global.legend.onClick;
+  Chart.defaults.global.legend.onClick = function(e, legendItem) {
+    update_caption(legendItem);
+    original.call(this, e, legendItem);
+  };
+
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Extorción','Homicido','Robo a Casa habitación','Robo a Transeúnte','Robo de Vehículos','Robo en Trasporte público','Secuestro','Violación'],
+      datasets: [{
+        label: 'Con violencia',
+        backgroundColor: "rgba(0,0,180,1)",
+        data: [12, 19, 3, 17, 28, 24, 7,20],
+      }, {
+        label: 'Sin violencia',
+        backgroundColor: "rgba(0,0,120,1)",
+        data: [30, 29, 5, 5, 20, 3, 10,15],
+      }]
+    }
+  });
+
+  var labels = {
+    "Con violencia": true,
+    "Sin violencia": true
+  };
+
+  var caption = document.getElementById("caption");
+
+  var update_caption = function(legend) {
+    labels[legend.text] = legend.hidden;
+    var selected = Object.keys(labels).filter(function(key) {
+      return labels[key];
+    });
+
+    var text = selected.length ? selected.join(" & ") : "nothing";
+    caption.innerHTML = "The chart is displaying " + text;
+  };
+</script>

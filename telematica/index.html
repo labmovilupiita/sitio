@@ -1,0 +1,60 @@
+<!Document html>
+<html>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="Curso HTML5">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Rodolfo Vera">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+  
+    <script src="js/jquery-ui-1.9.0/jquery-1.8.2.js" type="application/javascript"></script>
+   
+    <script type="application/javascript">
+        $(document).ready(function(){
+            $(".divlink").click(function(){
+                $("#contenido").attr("src",$(this).attr("ref"));
+            });
+        });
+    </script>
+    
+    <title>Telemática</title>    
+    <body>
+        <header>
+        <img id="tele" src="images/tele.png" alt="Telemática" width="154" height="97">
+        <p id="titulo">Academia de telemática</p>
+        <img id="ipn" src="images/ipn.png" alt="IPN" width="33" height="50">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" ref="inicio.html" class="divlink">Inicio</a></li>            
+            <li><a href="#" ref="planetudios.html" class="divlink">Plan de estudios</a></li>
+            <li><a href="">Perfiles</a>
+                <ul class="subs">
+                    <li><a href="#" ref="aspirante.html" class="divlink">Aspirante</a></li>
+                    <li><a href="#" ref="egresado.html" class="divlink">Egresado</a></li>
+                </ul>
+            </li>
+            <li><a href="#" ref="ocupacional.html" class="divlink">Campo Ocupacional</a></li>
+            <li><a href="#" ref="profesores.html" class="divlink">Profesores</a></li>     
+            <li><a href="">Proyectos</a>
+                <ul class="subs">
+                    <li><a href="#" ref="investigacion.html" class="divlink">Investigación</a></li>
+                    <li><a href="#" ref="ingenieria.html" class="divlink">Ingeniería</a></li>
+                </ul>
+            </li>
+            <li><a href="#" ref="calendario.html" class="divlink">Calendario</a></li>
+            <li><a href="#" ref="recursos.html" class="divlink">Recursos</a></li>
+        </ul>
+    </nav>
+    <iframe src="inicio.html" id="contenido" scrollbar="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0">
+              
+    </iframe>    
+    <footer>
+        <hr>
+        <p>M. en C. Miguel Alejandro Martínez Rosales</p>
+        <p>M. en C. Carlos Hernández Nava</p>
+    </footer>
+        
+</body>
+</html>

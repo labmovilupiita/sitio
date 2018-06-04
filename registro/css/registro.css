@@ -1,0 +1,48 @@
+body {  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;  }
+
+
+
+.nuevoUsuario {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.nuevoUsuario input[type="text"] {
+  margin-bottom: 10px;
+  display: inline-block;
+  *display: inline;
+  margin-bottom: 0;
+  vertical-align: middle;
+  *zoom: 1;
+}
+
+
+
+
+
+#contenedor{ vertical-align: middle; margin: 0 auto; background-image:url('../images/CITELC.png'); background-repeat:no-repeat; margin:auto; background-size: 100%; height:400px;  width: 425px}
+
+input {  background:transparent;	color: #eedd22;  border-style:solid; border: solid 3px black; border-radius:5px; font-size:21px; color:black; text-indent:0.5em; }
+input:focus{  outline: none; background: rgba(255, 255, 255, 0.90) ;	color: #eedd22;  border-style:solid; border: solid 3px #64c5a4; border-radius:5px; font-size:21px; color:black; text-indent:0.5em; }
+
+
+
+#registrar{ background: #53786c;	font-family: Arial; font-size:27px; color:black; border-radius:10px; margin:0 400px; border-style:solid; border: solid 2px #64c5a4; } 
+#registrar:hover{ color:white ; font-weight:bold; }
+
+
+
+
+.CampoObligatorio{
+			color: rgb(230,44,44);
+		}
+.CampoLlenado{
+			color: #27a6bd ;
+		}
+fieldset {
+    background-color: rgba(206, 198, 205, 0.65);
+    letter-spacing: 2px;
+    font-family:'Arial Unicode MS'; width:200px; position:relative; 
+}

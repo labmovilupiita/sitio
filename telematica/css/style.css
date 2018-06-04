@@ -1,0 +1,41 @@
+.parallax-viewport {
+	position:relative;
+	overflow:hidden;
+	width:800px;
+	height:80%;
+	margin:0px auto;
+	position:absolute;
+	text-align:center;
+}
+.parallax-layer {
+	position:absolute;
+	text-align:center;
+}
+.parallax1 {
+    width: 750px; 
+    height: 573px; 
+    display: block; 
+    top: 74.5895%; 
+    margin-top: -427.398px; 
+    left: 24.6184%; 
+    margin-left: -233.874px;
+    padding-left: 10px;
+}
+.parallax2 {
+    width: 700px; 
+    height: 573px; 
+    display: block; 
+    top: 74.5895%; 
+    margin-top: -427.398px; 
+    left: 24.6184%; 
+    margin-left: -221.565px;
+}
+.parallax3 {
+    width: 770px; 
+    height: 563px; 
+    display: block; 
+    top: 74.5895%; 
+    margin-top: -419.939px; 
+    left: 24.6184%; 
+    margin-left: -238.798px;
+}

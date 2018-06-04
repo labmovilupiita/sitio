@@ -1,0 +1,48 @@
+<?php
+
+/*
+  curl -i -X GET \
+  "https://graph.facebook.com/v2.8/1115322691824958/feed?fields=message,created_time&access_token=EAAEB01ZCmjDoBANU0XJyZCfQZAuQZCwOWZBI1rU0opaxIp5YyZCJhmGUDZAstyZBQDlML1sH241CXZCDfz8sZCp8ZBTRnaCZCbZCZCsBiZCWMQF9RjgXGD80XDHznZCDJ00ZAUFZAEnD6lfFQTnm86PwQIBqX18imI"
+
+  https://graph.facebook.com/v2.8/1115322691824958/feed?fields=message,created_time&limit=25&__paging_token=enc_AdBI53KY6XI1S8ZAo0F25UUyOqBSOZA8AofJCdXN5sTyM82Ocg3g3PEtKgVlgxA6LmhC7uhSp1X6DZB6ZBwRDuKdnfGuMd6q05cybYY9ccv3zp2YVQZDZD&access_token=EAAEB01ZCmjDoBANU0XJyZCfQZAuQZCwOWZBI1rU0opaxIp5YyZCJhmGUDZAstyZBQDlML1sH241CXZCDfz8sZCp8ZBTRnaCZCbZCZCsBiZCWMQF9RjgXGD80XDHznZCDJ00ZAUFZAEnD6lfFQTnm86PwQIBqX18imI&until=1453835026
+ *  */
+$host = "127.0.0.1";
+$user = "root";
+$password = "ramponce";
+$database = "publicaciones";
+$con = mysqli_connect($host, $user, $password, $database);
+$token = "EAACEdEose0cBAMVXeYZCBZB0ZAlBg4jtoYM5dnQuAmDiTAK9ooqrdaqr1b2ZCwgirsFnlkLtHrD4RtFp9MqDhN46GFaRzEUZAi5Rrmw4qxWbzTvZAZAik2riTCzyG7XmrKS8PyGWT8hcWSpsiNi6flwKfiErU0E9ZCnm8Hkb4b1EOUftjZB6Spok1HlHdTLboB1cZD";
+$idfb = "1115322691824958";
+$url = "https://graph.facebook.com/v2.8/" . $idfb . "/feed?fields=message,created_time&limit=100&format=json&access_token=" . $token;
+do {
+    error_log($url);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $response = curl_exec($ch);
+    error_log($response);
+    curl_close($ch);
+    $json = json_decode($response);
+    for ($i = 0; $i < count($json->data); $i++) {
+        $fecha = $json->data[$i]->created_time;
+        if (isset($json->data[$i]->message)) {
+            $message = $json->data[$i]->message;
+            if ($con != null && ((stripos($message, '#AutoRobado') !== false) || (stripos($message, '#robodeauto') !== false))) {
+
+                $SQL_create = "INSERT INTO publicaciones (idpublicaciones, publicacion, fecha) VALUES ('" . $json->data[$i]->id . "', '" . $message . "', '" . $fecha . "');";
+                echo $message . "<br><br>";
+                mysqli_query($con, $SQL_create);
+            }
+        }
+    }
+    if (isset($json->paging->next)) {
+        $url = "" . $json->paging->next;
+    }
+} while (count($json->data) != 0);
+
+//EAAEB01ZCmjDoBANU0XJyZCfQZAuQZCwOWZBI1rU0opaxIp5YyZCJhmGUDZAstyZBQDlML1sH241CXZCDfz8sZCp8ZBTRnaCZCbZCZCsBiZCWMQF9RjgXGD80XDHznZCDJ00ZAUFZAEnD6lfFQTnm86PwQIBqX18imI
+?>
+

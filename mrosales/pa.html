@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Alejandro Martínez Rosales</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+    </script>
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<!--<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+								</li>
+                                -->
+                                <li>                                  
+									<a class="gn-icon gn-icon-article" href="curriculum.html">Curriculum</a>
+								</li>	
+                                <li>
+									<a class="gn-icon gn-icon-article" href="materias.html">Materias</a>									
+								</li>								
+								<!--<li><a class="gn-icon gn-icon-cog">Trabajos Terminales</a></li>-->
+								<!--<li><a class="gn-icon gn-icon-help">Help</a></li>-->
+								<li>
+									<a class="gn-icon gn-icon-archive">Trabajos Terminales</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-article">Finalizados</a></li>
+										<li><a class="gn-icon gn-icon-pictures">En curso</a></li>
+										<li><a class="gn-icon gn-icon-videos">Propuestas</a></li>
+									</ul>
+								</li>
+                                <li>
+                                    <a class="gn-icon gn-icon-download">Downloads</a>									
+								</li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+                 <li>
+                     <a href="materias.html">Materias</a>
+                </li>
+				<li><a class="codrops-icon codrops-icon-drop" href="mailto:mrosales81@gmail.com"><span>Contacto</span></a></li>
+			</ul>
+		</div><!-- /container -->        
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu(document.getElementById('gn-menu'));
+		</script>
+        <article>
+            <h2>Programación Avanzada</h2>
+            <hr>
+            <h3><b>Prácticas y tareas</b></h3>
+            <ol>
+                <li>Monitoreo de procesos</li>
+                <li>Fork</li>
+                <li><a href="files/code/hilos.c" target="_blank">Hilos</a></li>
+            </ol>
+            <h3><b>Presentaciones</b></h3>
+            <ul>
+                <li>Descarga aquí la presentación de la clase (<a href="files/docs/avanzada.pdf" target="_blank">descarga</a>)</li>
+            </ul>
+            <hr>
+            <h3><b>Seguimiento</b></h3>
+        </article>
+	</body>
+</html>

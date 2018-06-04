@@ -1,0 +1,47 @@
+<!Document html>
+<html>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="Curso HTML5">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Rodolfo Vera">
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+    <script src="js/sripts.js" type="application/javascript"></script>
+    <title>Telemática</title>    
+    <body onload="init();">
+    <div id="wrapinterno">
+        <article>
+            <h1>Campo Ocupacional</h1><hr>
+        <p>El campo ocupacional actual del Ingeniero en Telemática está en empresas de telecomunicaciones, financieras, instituciones gubernamentales, redes de comunicaciones privadas y consultorías independientes, entre otras.</p>
+             <video id="Video1" controls style="border: 1px solid blue;" height="200" width="300" title="video element">            
+         HTML5 Video is required for this example
+    </video>
+    
+    <div id="buttonbar" style="display: none;")>
+        <button id="restart" title="Restart button"><img src="images/chapter_previous.png" width="16" height="16"/></button>
+        <button id="slower" title="Slower playback button"><img src="images/minus.png" width="16" height="16"/></button> 
+        <button id="rew" title="Rewind button" ><img src="images/rewind.png" width="16" height="16"/></button>
+        <button id="play" title="Play button"><img src="images/play.png" width="16" height="16"/></button>
+        <button id="fwd" title="Forward button" ><img src="images/fast_forward.png" width="16" height="16"/></button>
+        <button id="faster" title="Faster playback button"><img src="images/plus.png" width="16" height="16"/></button>
+          
+        <br />
+        <label>Playback </label>
+            <label>Reinicia el playback rate: </label><button id="normal" title="Reset playback rate button"><img src="images/playback_reload.png" width="16" height="16"/></button>    
+        
+        <label>  Volúmen </label>
+            <button id="volDn"  title="Volume down button"><img src="images/speaker_minus.png" width="16" height="16"/></button>
+            <button id="volUp"  title="Volume up button"><img src="images/speaker_plus.png" width="16" height="16"/></button>
+            <button id="mute" title="Mute button" ><img alt="Volume on button" src="images/volume-100.png" width="16" height="16" /></button>        
+    </div>   
+
+    <div id= "inputField" style="display:none;" >
+        <label>Escribe o pega una URL de video: <br/>
+        <input type="text" id="videoFile" style="width: 300px;"  title="video file input field" value="http://ie.microsoft.com/testdrive/ieblog/2011/nov/pp4_blog_demo.mp4" />        
+        <button id="loadVideo" title="Load video button" >Load</button>
+        </label>
+    </div>
+    <div title="Error message area" id="errorMsg" style="color:Red;"></div>  
+        </article>            
+    </div>
+</body>
+</html>
