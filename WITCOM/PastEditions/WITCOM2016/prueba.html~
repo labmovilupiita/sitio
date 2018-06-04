@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>APGFORM</title>
+</head>
+<body>
+<form action="apgform1.7.php method="post">
+<label for="input_nombres">Nombre y Apellido</label>
+<input id="input_nombres" type="text" name="nombres" value="" />
+<br />
+<br />
+<label for="input_sexo">Sexo</label>
+<select id="select_sexo" name="sexo">
+<option value="M">Masculino</option>
+<option value="F">Femenino</option>
+</select>
+<br /><br />
+<label for="dni">DNI</label>
+<input id="dni" type="text" name="dni" value="" />
+<br /><br />
+<label for="domicilio">Domicilio</label>
+<input id="domicilio" type="text" name="domicilio" value="" />
+<br /><br />
+<label for="localidad">Localidad</label>
+<input id="localidad" type="text" name="localidad" value="" />
+<br /><br />
+<label for="cp">Codigo Postal</label>
+<input id="cp" type="text" name="cp" value="" />
+<br /><br />
+<label for="telefono">Telefono</label>
+<input id="telefono" type="text" name="telefono" value="" />
+<br /><br />
+<input type="reset" name="reset" value="Limpiar" />
+<input type="submit" name="submit" value="Enviar" />
+</form>
+</body>
+</html>

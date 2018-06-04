@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>CITELC 2014</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link href='images/logo3v.png' rel='shortcut icon' type='image/x-icon'>
+
+<script language="JavaScript" SRC="js/banner.js"></script>
+
+</head>
+<body >
+
+<div id="wrapper">
+	<div id="header" class="container">
+		
+		<div id="banner"><img src="images/logo banner.png" alt="" width="958" height="149" border="0" id="banner_images"/></div>   
+        
+	</div>
+	<div id="menu" class="container">
+		<ul>
+					<li><a href="index.html">Conference</a></li>
+			<li><a href="papers.html" >Call for papers</a></li>
+			<li><a href="organizers.html">Organizers</a></li>
+            <li ><a href="submit.html">Submit a paper</a></li>
+            <li><a href="reviewers.html">Reviewers</a></li>
+			<li ><a href="program.html">Program</a></li>
+			<li class="active"><a href="registration.html">Registration</a></li>
+          <li><a href="location.html">Location</a></li>            
+            <li><a href="pevents.html">Previous Events </a></li>
+		</ul>
+	</div>
+	<div id="top-bar" class="container">
+		<div class="bar">
+			<div class="text">First International Congress on Telematics, Computing and Communications (CITELC 2014)</div>
+		</div>
+	</div>
+	<div id="page" class="container">
+		<div id="content">
+			<div class="content">
+             <br><br>
+
+<?php
+function generarCodigo($longitud) {
+ $key = '';
+ $pattern = '1234567890abcdefghijklmnopqrstuvwxyz';
+ $max = strlen($pattern)-1;
+ for($i=0;$i < $longitud;$i++) $key .= $pattern{mt_rand(0,$max)};
+ return $key;
+}
+?>
+                	<?php
+    $server="localhost";
+    $database = "labcomputo_BD";
+    $db_user = "root";
+    $db_pass = "labmovil";
+    $conn = mysql_connect($server, $db_user, $db_pass) or die ("error1:".mysql_errno().mysql_error());
+    mysql_select_db($database) or die ("error2".mysql_error());
+
+    @mysqli_query("SET NAMES 'utf8'");
+
+    $v_nombre = mysql_real_escape_string(trim($_POST[nombre]));
+    $v_apellidos = strtoupper(mysql_real_escape_string(trim($_POST[apellidos])));
+    $v_procedencia = mysql_real_escape_string(trim($_POST[procedencia]));
+    $v_email = mysql_real_escape_string(trim($_POST[email]));
+    $v_taller = mysql_real_escape_string(trim($_POST[talleres]));
+    $v_codigo = generarCodigo(6);
+    
+    $query = "CALL sp_registro_CITELC('$v_nombre','$v_apellidos','$v_procedencia','$v_email','$v_taller','$v_codigo');";
+    mysql_query($query);
+/*   
+$result=mysqli_query("SELECT nombre FROM talleres2014 WHERE id=".$v_taller, $conn);    
+    $row=mysql_fetch_row($result);
+    while ($row=mysql_fetch_row($result)) 
+    { 
+        $nTaller = $row[0];
+        echo 'asasdasdad';
+    } 
+  */  
+    mysqli_close($conn);
+    $to = $v_email;
+	$subject = "Registro a talleres CITELC 2014";
+	$message = '<strong>'.$v_nombre.' '.$v_apellidos.'</strong> has quedado registrado al taller.<br>Tu código de'. 'registro es <strong>'.$v_codigo.'</strong>. Guárdalo porque lo necesitarás para ingresar al taller.<br>'.
+			  '<br>Si tienes alguna duda o quieres realizar algún cambio, por favor envía un email con '.
+			  'tus datos a <strong>citelc.upiita@ipn.mx</strong><br>';
+
+    $messageMail = ''.$v_nombre.' '.$v_apellidos.' has quedado registrado al taller '.$nTaller.'. '.
+			  'Si tienes alguna duda o quieres realizar algún cambio, por favor envía un email con '.
+			  'tus datos a experienciastelematicas@gmail.com';
+			  
+	$from = "experienciastelematicas@gmail.com";
+
+    
+    $headers = "From: experienciastelematicas@gmail.com";
+    mail($to,$subject,$messageMail,$headers);
+
+	echo 'Hemos recibido tus datos.<br><br>'.
+		$message.'<br><br><strong>Laboratorio de Computo Movil</strong>';
+?>
+                    
+                    </td>
+                </tr>
+
+                
+             </table>
+             
+
+ 
+             <br><br>
+             </form>
+
+
+</div>         
+             
+      <p>Sponsored by</p>
+            
+            <table align="center" border="0" width="503">
+              <tr>
+                <td width="405" align="center"><table width="417" border="0">
+                  <tr>
+                    <td><div align="center"><a href="http://www.ipn.mx" target="_blank"><img src="images/ipn.gif" alt="IPN" width="70" height="90" border="0" /></a></div></td>
+                    <td><img src="images/logo upiita.png" width="179" height="92" alt="upiita" longdesc="http://www.upiita.ipn" /></td>
+                    <td><div align="center"></div></td>
+                    </tr>
+                </table></td>
+              </tr>
+              
+            </table>
+		
+				
+			
+		</div>
+		<div id="sidebar">
+			<ul>
+				<li>
+				  <h2>News</h2>
+			  </li>
+                <li>The Program has been posted.</li>
+                <li>&nbsp;</li>
+                <li><font color="red">IMPORTANT: Registration for workshops </font> <a href= http://www.citelc.upiita.ipn.mx/registration.html>here</a></a>.</li>
+                <li> </li>
+                <li>
+                  <p></p>
+                </li>
+                <li>
+                  <h2>Important Dates</h2>
+                  <ul>
+                      <ul>
+                        <li><strong>Abstract Submission </strong><strike><u>June 10</u></strike> June 18, 2014 (Midnight PT)</li>
+                        <li><strong>Full Paper Submission</strong></li>
+                        <li><strike><u>June 22</u></strike> June 28, 2014 (Midnight PT)</li>
+                        <li><strong>Notification of Acceptance</strong></li>
+                        <li>July  21, 2014</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li></li><li><ul><li>
+                    </li>
+                  </ul>
+                </li>
+                <li><ul><li>
+				  </li>
+				  </ul>
+				</li>
+			</ul>
+</div>
+	  <div class="clearfix">&nbsp;</div>
+		<div id="footer-bar" class="two-cols"><em>For more information, please <a href="mailto:citelc.upiita@ipn.mx">Contact us</a>.</em></div>
+  </div>
+</div>
+<div id="footer" class="container">
+	<p>(c) 2014 Design by Miguel Martinez (Child)</p>
+</div>
+</body>
+</html>

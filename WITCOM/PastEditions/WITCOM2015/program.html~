@@ -1,0 +1,518 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>WITCOM 2015 - Program</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-2917433-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header2">
+            <h1 id="logo"><a href="index.html"><img src="images/miniLogo.png"/>WITCOM 2015</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="EXPODEMO/index.html">{EXPO DEMO 2015}</a></li>
+                    <li><a href="speakers.html">Conferences & Workshops</a></li>
+                    <li><a href="payment.html">Conference Fee/Payment</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li>
+                        <a href="#">Paper submission</a>
+                        <ul>
+                            <li><a href="callforpapers.html">Call for papers</a></li>
+                            <li><a href="submitpaper.html">Submit a paper</a></li>
+                            <li><a href="reviewers.html">Reviewers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="registration.html" class="button special">Register now!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="seven" class="wrapper style3 special fade">
+            <div class="container">
+                <header>
+                    <img src="images/balloonProgram.png" height="20%" width="20%" alt="" />
+                    <h2>LIST OF CONFERENCES AND WORKSHOPS</h2>
+                </header>
+                <a href="#conferences" class="goto-next scrolly">Next</a>
+            </div>
+        </section>
+
+        <!--Conferences -->
+        <section id="conferences" class="wrapper style5 special fade">
+            <div class="container">
+                <header class="major">
+                    <h2>Conferences</h2>
+                    <p><a href="images/CONFERENCES_LIST.jpg">Download the program</a></p>
+                </header>
+
+
+                <!--Wednesday-->
+                <div class="box alt">
+                    <div class="table-wrapper">
+                        <table style="margin-left:auto; margin-right:auto; width:60%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3"><strong>WEDNESDAY, 4th</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>08:00 - 08:50 AM</td>
+                                    <td><img src="images/registration.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Registration</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>08:50 AM</td>
+                                    <td><img src="images/opening.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Opening</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>09:00 AM</td>
+                                    <td><strong>Keynote 1: Dr. Cesar Viho<br>Université de Rennes (France)<br> "On quality of Experience(QoE)-based resource management in wireless networks"</strong></td>
+                                    <td><a href="speakers.html#1">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM</td>
+                                    <td><strong>Paper 7</strong></td>
+                                    <td><a href="speakers.html#37">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10:20 AM</td>
+                                    <td><img src="images/coffee.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Coffee break</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 AM</td>
+                                    <td><strong>Paper 12</strong></td>
+                                    <td><a href="speakers.html#312">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10:50 AM</td>
+                                    <td><strong>Paper 2</strong></td>
+                                    <td><a href="speakers.html#32">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>11:10 AM</td>
+                                    <td><img src="images/coffee.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Coffe break</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>11:20 AM</td>
+                                    <td><strong>Keynote 2: Allan Sandoval <br>Linux México<br>Linux y el software libre en las diferentes áreas de la ingeniería</strong></td>
+                                    <td><a href="speakers.html#2">[Click for info]</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>12:00 AM</td>
+                                    <td><strong>Paper 10</strong></td>
+                                    <td><a href="speakers.html#310">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>12:20 AM</td>
+                                    <td><strong>Keynote 2: Ing. León Ramos<br>Meganúcleo<br>Peritaje informático</strong></td>
+                                    <td><a href="speakers.html#3">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>01:00 PM</td>
+                                    <td><strong>Keynote 12: Arturo Cruz & Leonel Gutiérrez <br>Terrasat<br>DRONES: Planeación y producción de aerofotomosaicos georreferenciados con tecnología UAV</strong></td>
+                                    <td><a href="speakers.html#4">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>02:00 PM</td>
+                                    <td><img src="images/lunch.png" style="width:30px; height:30px; margin-right:20px;" /><strong>          Lunch</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>03:00 - 06:00 PM</td>
+                                    <td><img src="images/workshopClass.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Workshops</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+
+
+
+
+                    <!--Thursday-->
+                    <br>
+                    <header class="major"></header>
+                    <div class="table-wrapper">
+                        <table style="margin-left:auto; margin-right:auto; width:60%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3"><strong>THURSDAY, 5th</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>08:00 - 08:50 AM</td>
+                                    <td><img src="images/registration.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Registration</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>09:00 AM</td>
+                                    <td><strong>Keynote 8: Dr. Cristian Barria<br>Universidad Mayor (Chile)<br>Modificación y evasión de malware</strong></td>
+                                    <td><a href="speakers.html#5">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM</td>
+                                    <td><strong>Paper 14</strong></td>
+                                    <td><a href="speakers.html#314">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10:20 AM</td>
+                                    <td><img src="images/coffee.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Coffee break</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 AM</td>
+                                    <td><strong>Keynote 7: Rodrigo Sámano <br>Policia Cibernética</strong></td>
+                                    <td><a href="speakers.html#37">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>11:10 AM</td>
+                                    <td><strong>Paper 8</strong></td>
+                                    <td><a href="speakers.html#38">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>11:30 AM</td>
+                                    <td><img src="images/coffee.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Coffe break</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>11:40 AM</td>
+                                    <td><strong>Keynote 5: Alejandro Martin del Campo <br>ITESM<br>¿Puede el internet hacer una sociedad más democrática?</strong></td>
+                                    <td><a href="speakers.html#6">[Click for info]</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>12:20 AM</td>
+                                    <td><strong>Paper expert system (UPIITA)</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>12:40 AM</td>
+                                    <td><strong>Keynote 10: Sabino García <br>Microsoft<br>Un politécnico colaborativo con Office 365</strong></td>
+                                    <td><a href="speakers.html#7">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>01:20 PM</td>
+                                    <td><strong>Keynote 7: Jose Antonio<br>CISCO<br>Internet de las Cosas: IoE</strong></td>
+                                    <td><a href="speakers.html#8">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>02:00 PM</td>
+                                    <td><img src="images/lunch.png" style="width:30px; height:30px; margin-right:20px;" /><strong>          Lunch</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>03:00 - 06:00 PM</td>
+                                    <td><img src="images/workshopClass.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Workshops</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+
+                    <!--Friday-->
+                    <br>
+                    <header class="major"></header>
+                    <div class="table-wrapper">
+                        <table style="margin-left:auto; margin-right:auto; width:60%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3"><strong>FRIDAY, 6th</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>08:00 - 08:50 AM</td>
+                                    <td><img src="images/registration.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Registration</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>09:00 AM</td>
+                                    <td><strong>Keynote 9: Dr. Francisco Rodríguez<br>CINVESTAV<br>La agencia que no es, quiere ser el aleph</strong></td>
+                                    <td><a href="speakers.html#9">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM</td>
+                                    <td><strong>Paper 15 </strong></td>
+                                    <td><a href="speakers.html#315">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10:20 AM</td>
+                                    <td><img src="images/coffee.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Coffee break</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 AM</td>
+                                    <td><strong>Keynote 11: Dr. Alejandro Sandoval <br>ITESM<br>Del enfoque de sistemas a la administración de proyectos</strong></td>
+                                    <td><a href="speakers.html#10">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10:50 AM</td>
+                                    <td><strong>Paper 9</strong></td>
+                                    <td><a href="speakers.html#39">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>11:30 AM</td>
+                                    <td><img src="images/coffee.png" style="width:30px; height:30px; margin-right:20px;" /><strong>Coffe break</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>11:40 AM</td>
+                                    <td><strong>Keynote 6: Sergio Quiroz <br>UNAM<br>Estudiantes emprendedores que pueden cambiar la manera de hacer negocios, aplicando la tecnología</strong></td>
+                                    <td><a href="speakers.html#11">[Click for info]</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>12:20 AM</td>
+                                    <td><strong>Paper 6</strong></td>
+                                    <td><a href="speakers.html#36">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>12:40 AM</td>
+                                    <td><strong>Keynote : Ing. Jorge Huerta <br>Creator of mobile app "Verifica"<br>Aplicaciones móviles</strong></td>
+                                    <td><a href="speakers.html#4">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>01:20 PM</td>
+                                    <td><strong>Keynote 4: Ricardo Nájera <br>Oracle<br>Alta disponibilidad para ambientes productivos de desarrollo</strong></td>
+                                    <td><a href="speakers.html#12">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td>02:00 PM</td>
+                                    <td><strong>Closure</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+        </section>
+
+
+        <!--Workshops-->
+        <section id="workshops" class="wrapper style1 special fade">
+            <div class="container">
+                <header class="major">
+                    <h2>Workshops</h2>
+                    <p><a href="images/WORKSHOPS_LIST.jpg">Download the program</a></p>
+                </header>
+                <div class="box alt">
+
+                    <div class="table-wrapper">
+                        <table style="margin-left:auto; margin-right:auto; width:60%">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Date</strong></td>
+                                    <td><strong>Workshop</strong></td>
+                                    <td colspan="2"><strong>Time & Place</strong></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6"><strong>Wednesday 5th</strong></td>
+                                    <td><strong>Cloud Computing workshop <br>(2 days)</strong>
+                                        <br>
+                                        <p>Ing. Fabián Mendieta</p>
+                                    </td>
+                                    <td><strong>16:00 -19:00</strong>
+                                        <br><strong>Lab. Telemática I</strong></td>
+                                    <td><a href="speakers.html#13">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Business Simulator workshop <br>(1 day) </strong>
+                                        <p>Ing. Daniel Issac Ramírez</p>
+                                    </td>
+                                    <td><strong>16:00 -18:00</strong>
+                                        <br><strong>Sala 08</strong></td>
+                                    <td><a href="speakers.html#14">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Voice Over IP workshop <br>(1 day) </strong>
+                                        <p>Ing. Julio Ramírez (Elastix México)</p>
+                                        <br>IMPORTANT: Preferably bring YOUR OWN LAPTOP
+                                    </td>
+                                    <td><strong>14:00 -16:00</strong>
+                                        <br><strong>Lab. Telemática II</strong></td>
+                                    <td><a href="speakers.html#13">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Malware Workshop <br>(1 day)</strong>
+                                        <p>Dr. Miguel Palma</p>
+                                        <br>IMPORTANT: Preferably bring YOUR OWN LAPTOP
+                                    </td>
+                                    <td><strong>16:00 -18:00<br><strong>Sala 09</strong></td>
+                                    <td><a href="speakers.html#15">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Genetic Algorithms <br>(1 day)</strong>
+                                        <p>M en C Edgar Catalan</p>
+                                    </td>
+                                    <td><strong>16:00 -18:00<br><strong>Sala 06</strong></td>
+                                    <td><a href="speakers.html#17">[Click for info]</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Software development project management <br>(1 day) </strong>
+                                        <p>Ing. Tapia (Softtek)</p>
+                                        <br>(Theory session)
+                                    </td>
+                                    <td><strong>14:00-16:00<br><strong>Sala de Usos Múltiples</strong></td>
+                                    <td><a href="speakers.html#18">[Click for info]</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="4"><strong>Thursday 5th</strong></td>
+                                    <td><strong>Cloud Computing workshop<br> (2 days)</strong>
+                                        <p>Ing. Fabián Mendieta</p>
+                                    </td>
+                                    <td><strong>16:00 -19:00<br><strong>Lab. Telemática I</strong></td>
+                                    <td><a href="speakers.html#13">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Office 365 <br>(1 day)</strong>
+                                        <p>Ing. Sabino (Microsoft)</p>
+                                    </td>
+                                    <td><strong>15:00 -16:00<br>Sala 09</strong></td>
+                                    <td><a href="speakers.html#19">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Technologic process modeling workshop<br> (1 day)</strong>
+                                        <p>Ing. Jose Alberto (Shaffen)</p>
+                                    </td>
+                                    <td><strong>16:00 -18:00<br>Sala 07</strong></td>
+                                    <td><a href="speakers.html#20">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Appcelerator workshop<br> (1 day)</strong>
+                                        <p>Yair Rodríguez Aparicio</p>
+                                        <br>IMPORTANT: Preferably bring YOUR OWN LAPTOP
+                                    </td>
+                                    <td><strong>14:00 -16:00<br>Sala 06</strong></td>
+                                    <td><a href="speakers.html#20">[Click for info]</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="5"><strong>Friday 6th</strong></td>
+                                    <td><strong>App development with ADF Workshop
+                                        <br>(1 day)</strong>
+                                        <p>Ing. Ricardo Nájera (ORACLE Mexico)</p>
+                                        <br>IMPORTANT: Preferably bring YOUR OWN LAPTOP
+                                    </td>
+                                    <td><strong>16:00 -18:00<br><strong>Lab. Telemática I</strong></td>
+                                    <td><a href="speakers.html#13">[Click for info]</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Videogame development workshop<br>(1 day) </strong>
+                                        <p>Ing. Addiel Juárez</p>
+                                        <br>IMPORTANT: Preferably bring YOUR OWN LAPTOP
+                                    </td>
+                                    <td><strong>16:00 -18:00<br>Lab. Telemática II</strong></td>
+                                    <td><a href="speakers.html#22">[Click for info]</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aprendiendo linux a la antigua workshop<br>(1 day) </strong>
+                                        <p>Ing. Allan Sandoval (Linux Professional Institute)</p>
+                                    </td>
+                                    <td><strong>16:00 -18:00<br>Lab. Telemática II</strong></td>
+                                    <td><a href="speakers.html#50">[Click for info]</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style5">
+            <div class="container">
+                <!-- Content -->
+                <section id="content">
+                    <header class="major">
+                        <h3>Get to know the venue</h3>
+                        <p>Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas</p>
+                        <img class="6u  12u(xsmall)" src="images/labmap.png" alt="mapa laboratorios" />
+                        <br/>
+                        <p><a id="cartel" href="images/mapaLaboratorios.png" alt="Full size map">Download the full-res map</a></p>
+                    </header>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons ribbon">
+                <li>
+                    <a href="http://www.ipn.mx/"><img src="images/logoIPN.jpg" alt="IPN" /></a>
+                </li>
+                <li>
+                    <a href="http://www.upiita.ipn.mx/"><img src="images/logoUPIITA.jpg" alt="UPIITA" /></a>
+                </li>
+                <li>
+                    <a href="http://www.labcomputomovil.upiita.ipn.mx/"><img src="images/logoTele.jpg" alt="Laboratorio de Cómputo Móvil" /></a>
+                </li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://twitter.com/UpiitaWitcom" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/Witcom-1617038311862723/timeline/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="mailto:witcom.upiita@ipn.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Laboratorio de Cómputo Móvil, UPIITA - IPN.</li>
+                <li>Design: <a href="https://about.me/alfonso.sandoval">Alfonso Sandoval</a></li>
+            </ul>
+        </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

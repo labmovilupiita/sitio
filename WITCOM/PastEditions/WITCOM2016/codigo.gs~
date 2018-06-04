@@ -1,0 +1,12 @@
+function doGet() {
+return HtmlService.createHtmlOutputFromFile('inicio')
+.setSandboxMode(HtmlService.SandboxMode.IFRAME);
+}
+//Obtener los valores del formulario.
+function obtenerValores(formulario){
+var nombre = formulario.nombredepila,
+apellido = formulario.nombredefamilia,
+libro = SpreadsheetApp.openById('1OxuO01XMpNO2-jv1dw1k7ZYxbs9hA-g6KgkVBW0vYNU'),
+hoja = libro.getSheetByName('Hoja 1');
+hoja.appendRow([nombre, apellido]);
+}

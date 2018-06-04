@@ -1,0 +1,110 @@
+<?php
+
+	//------------------------------------------------------------------------------------------------------------------
+	// VALIDADACIONES
+	//------------------------------------------------------------------------------------------------------------------
+
+	if(strlen($_POST[nombre]) == 0){
+		die('{"type":"error","message":"El nombre es obligatorio."}');
+	} else  if(!preg_match ('/^[A-Záéíóúñ ]{1,255}$/i', $_POST[nombre])){
+		die('{"type":"error","message":"El nombre deben ser solo letras."}');
+	}else{
+	 $v_nombre = trim($_POST[nombre]);
+	}
+
+	if(strlen($_POST[apellidos]) == 0){
+		die('{"type":"error","message":"Los apellidos son obligatorios."}');
+	} else  if(!preg_match ('/^[A-Záéíóúñ ]{1,255}$/i', $_POST[apellidos])){
+		die('{"type":"error","message":"Los apellidos deben ser solo letras."}');
+	}else{
+	 $v_apellidos = mysql_real_escape_string(trim($_POST[apellidos]));
+	}
+
+
+	if(strlen($_POST['plan']) == 0){
+	  die('{"type":"error","message":"Seleccione un plan de estudios."}');
+	}
+
+		
+	 if($_POST['plan'] == 'n' || $_POST['plan'] == 'v'){ // -- BOLETA OBLIGATORIA PARA LOS ALUMNOS 
+		if(strlen($_POST[boleta]) == 0){
+		  die('{"type":"error","message":"La  boleta es obligatoria."}');
+		} else if(!ctype_digit($_POST[boleta])){
+			die('{"type":"error","message":"La boleta deben ser solo números."}');
+		}else{
+		 $v_boleta = mysql_real_escape_string(trim($_POST[boleta]));
+
+		}
+	}else{
+		$v_boleta =0;	
+	}
+
+	// PUEDE SUCEDER QUE LAS PONENCIAS O TALLERES A LOS QUE ESTA
+	// INSCRITO YA ESTEN INACTIVOS.
+	/*
+       if (count($_POST['ponencias']) == 0){
+	   die('{"type":"error","message":"Seleccione al menos un evento."}');
+	}
+	*/
+
+		//------------------------------------------------------------------------------------------------------
+	//  END VALIDADACIONES
+	//------------------------------------------------------------------------------------------------------	
+
+
+	//------------------------------------------------------------------------------------------------------
+	// PONDERACION DEL USUARIO
+	//------------------------------------------------------------------------------------------------------
+	if($_POST['plan'] == 'n') {
+		$plan = 'n';
+		$avance = $_POST['nplan'];
+		$tipo_usuario = 30;
+		}
+	else if($_POST['plan'] == 'v'){
+		$plan = 'v';
+		$avance = $_POST['vplan'];
+		$tipo_usuario = 30;
+	}else if($_POST['plan'] == 'i'){
+		$plan = 'i';
+		$avance = null;
+		$tipo_usuario = 10;
+	}
+	else{
+		$plan = 'e';
+		$avance = null;
+		$tipo_usuario = 20;
+		}
+	
+
+	
+
+	//-- FUNCIONES NECESARIAS SI EL SERVIDOR PHP ESTA EN UTF8
+
+        $v_apellidos = utf8_decode($v_apellidos);	
+	$v_nombre = utf8_decode($v_nombre);	
+	
+	// -- ACTUALIZA LOS DATOS DEL USUARIO
+	$sess_id = $_POST['id'];
+	
+	$str_qry="update auditorio  set nombre ='$v_nombre', apellidos ='$v_apellidos',plan='$plan',avance='$avance',tipo_usuario=$tipo_usuario where id_usuario = $sess_id";	
+	mysql_query($str_qry) or die('{"type":"error","message":"'.mysql_error().'--'.$str_qry.'"}');
+	
+	
+		
+	mysql_query("delete from asistencia where usuario =$sess_id and ponencia in (Select  id from ponentes where adm_activa = 1)");	
+	
+	$concatena = '';
+	error_log($_POST['ponencias']);
+	foreach($_POST['ponencias'] as $i => $ponencia){
+	// -- OBTIENE ID_PONENCIA-PRIORIDAD
+		$pon_array = explode('-',$ponencia);
+		$concatena.= "($sess_id, $pon_array[0], $pon_array[1]), ";
+		}
+	$concatena = substr($concatena,0,-2);
+	$query = "INSERT INTO asistencia (usuario, ponencia,prioridad) VALUES ".$concatena;
+	mysql_query($query) or  die('{"type":"error","message":"'.mysql_error().'"}');
+	/**/
+
+
+	die('{"type":"info","message":"Tus datos han sido actualizados."}'); 
+?>

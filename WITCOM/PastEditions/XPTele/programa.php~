@@ -1,0 +1,169 @@
+<?php
+session_start();
+$titulo = "Programa";
+include 'header.php';
+
+?>
+<style type="text/css">
+.uno {
+	text-align: left;
+}
+.uno {
+	text-align: center;
+}
+.uno {
+	text-align: left;
+}
+.tres {
+	color: #CCC;
+}
+.c {
+	font-size: 16px;
+}
+.c {
+	font-size: 24px;
+}
+.c {
+	text-align: left;
+}
+.ocho {
+	font-weight: bold;
+}
+.ocho {
+	font-weight: bold;
+}
+.ocho {
+	font-weight: bold;
+}
+.nueve {
+}
+.diez {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.diez {
+	font-family: "Times New Roman", Times, serif;
+}
+.blanco {
+	color: #FFF;
+}
+</style>
+
+<p> &nbsp;&nbsp;</p>
+<p> &nbsp;&nbsp;</p><p> &nbsp;&nbsp;<span class="c"></span></p>
+<p align="center" class="c"><span class="c"><span class="c"><strong>Programa de Conferencias Experiencias Telemáticas.</strong></span></span></p>
+<p align="center" class="c"><span class="c"><span class="c"><strong>Sábado 23 de Agosto 2014, 9:00 - 18:00 hrs</strong></span></span></p>
+
+  
+<table width="100%" height="340" border="1" cellpadding="3" cellspacing="0" bordercolor="#EEEEEE"  bgcolor="#FAFAFA">
+  <tbody>
+    <tr bgcolor="#CCCCCC" class="blanco">
+      <td width="15%" valign="middle" align="center" bgcolor="#666666"><strong>Horario</strong></td>
+      <td width="27%" valign="middle" bgcolor="#666666"><p><strong>Título</strong></p></td>
+      <td width="14%" valign="middle" bgcolor="#666666"><p><strong>Ponente</strong></p></td>
+      <td width="44%" valign="middle" bgcolor="#666666"><p><strong>Empresa</strong></p></td>
+    </tr>
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle"><p><strong>8:00-8:50</strong></p></td>
+      <td bgcolor="#CCCCCC" colspan="3" valign="middle"><p class="diez">Registro y servicio de café </p></td>
+    </tr>
+    <tr>
+      <td valign="middle" bgcolor="#CCCCCC"><p>8:50-9:00</p></td>
+      <td colspan="3" valign="middle" bgcolor="#CCCCCC"><p>INAUGURACÓN</p></td>
+    </tr>
+    <tr>
+      <td valign="middle"><p>9:00-9:30</p></td>
+      <td valign="middle" class="ocho"><p>El poder de la Ingeniería Telemática</p></td>
+      <td valign="middle"><p>Juan Plata</p></td>
+      <td valign="middle"><p>Servicios Creativos, Soluciones y Consultoría en Tecnologías de la Información, S.A. de C.V.</p></td>
+    </tr>
+    <tr>
+      <td valign="middle"><p>9:30-10:10</p></td>
+      <td valign="middle" class="ocho"><p>Tu inicio en consultoría?</p></td>
+      <td valign="middle"><p>Grecia Ruíz y Fabiola Pacheco</p></td>
+      <td valign="middle"><p>Softek y Everis</p></td>
+    </tr>
+    <tr>
+      <td valign="middle"><p>10:10-10:40</p></td>
+      <td valign="middle" class="ocho"><p>“¿Miedo?... Recuerda que serás egresado de UPIITA” </p></td>
+      <td valign="middle"><p>Cristina Morales</p></td>
+      <td valign="middle"><p>AVAYA</p></td>
+    </tr>
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle"><p>10:40 – 10:50</p></td>
+      <td bgcolor="#CCCCCC" colspan="3" valign="middle"><p class="nueve"><span class="diez">Servicio de café </span></p></td>
+    </tr>
+    <tr>
+      <td valign="middle"><p>10:50-11:20</p></td>
+      <td valign="middle" class="ocho"><p>Telemáticos en las Telecomunicaciones</p></td>
+      <td valign="middle"><p>Andrea Hernández</p></td>
+      <td valign="middle"><p>ERICSSON</p></td>
+    </tr>
+    <!--<tr>
+      <td valign="middle" bgcolor="#999999"><p><strong>11:10-11:25</strong></p></td>
+      <td colspan="3" valign="middle" bgcolor="#999999"><p><strong>SERVICIO DE CAFETER&Iacute;A Y FRUTA</strong></p></td>
+    </tr>-->
+    <tr>
+      <td valign="middle"><p>11:20-11:50</p></td>
+      <td valign="middle" class="ocho"><p>Voz sobre IP empresarial y las comunicaciones unificadas. </p></td>
+      <td valign="middle"><p>Antonio Rios</p></td>
+      <td valign="middle"><p>Banco de México</p></td>
+    </tr>
+    <tr>
+      <td valign="middle"><p>11:50-12:20</p></td>
+      <td valign="middle" class="ocho"><p>Titulo por definir</p></td>
+      <td valign="middle"><p>Ricardo Miranda Quezada</p></td>
+      <td valign="middle"><p>Canal del Congreso</p></td>
+    </tr>
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle"><p>12:20 – 12:30</p></td>
+      <td bgcolor="#CCCCCC" colspan="3" valign="middle"><p><span class="diez">Servicio de café</span></p></td>
+    </tr>
+    <tr>
+      <td valign="middle"><p>12:30-13:00</p></td>
+      <td valign="middle" class="ocho"><p>Los dos lados de la moneda, reclutado y reclutador.</p></td>
+      <td valign="middle"><p>Oscar Arellano</p></td>
+      <td valign="middle"><p>Groupm</p></td>
+    </tr>
+    <tr>
+      <td valign="middle"><p>13:00-13:30</p></td>
+      <td valign="middle" class="ocho"><p>Gestión de Proyectos en las Telecomunicaciones </p></td>
+      <td valign="middle"><p>Aida López</p></td>
+      <td valign="middle"><p>HP</p></td>
+    </tr>
+    <!--<tr>
+      <td valign="middle" bgcolor="#999999"><p><strong>13:25-13:40</strong></p></td>
+      <td colspan="3" valign="middle" bgcolor="#999999"><p><strong>SERVICIO DE CAFETER&Iacute;A</strong></p></td>
+    </tr>-->
+    <tr>
+      <td valign="middle"><p>13:30-14:00</p></td>
+      <td valign="middle" class="ocho"><p>La cardinalidad profesional del ingeniero telemático. ¿Dónde aplicar nuestros conocimientos?</p></td>
+      <td valign="middle"><p>Sergio Zepeda</p></td>
+      <td valign="middle"><p>RSTN Consulting</p></td>
+    </tr>
+    <tr>
+      <!--<td valign="middle"><p>14:10-14:40</p></td>-->
+    </tr>
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle"><p>14:00 – 15:00</p></td>
+      <td bgcolor="#CCCCCC" colspan="3" valign="middle"><p><span class="diez">Hora de comida</span></p></td>
+    </tr>
+    <!--<tr>
+      <td valign="middle"><p>14:40-15:10</p></td>
+      <td valign="middle"><p>Ponencia 11</p></td>
+      <td valign="middle"><p>Ponente 11</p></td>
+      <td valign="middle"><p>Empresa 11</p></td>
+    </tr>
+    <tr>
+      <td valign="middle" bgcolor="#999999"><p><strong>15:10-16:00</strong></p></td>
+      <td colspan="3" valign="middle" bgcolor="#999999"><p><strong>SERVICIO DE ALIMENTOS Y REFRESCOS</strong>&nbsp;</p></td>
+    </tr>-->
+    <tr>
+      <td valign="middle"><p>15:00-18:00</p></td>
+      <td colspan="7" valign="middle"><p>TALLERES (SIMULT&Aacute;NEOS)</p></td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<?php
+include 'footer.php';
+?>
